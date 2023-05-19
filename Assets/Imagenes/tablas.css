@@ -1,0 +1,19 @@
+table,
+td{
+    border: 2px solid #333;
+}
+thead,
+    tfoot{
+        background-color: #333;
+        color: aqua;
+    }
+.azulito tr :nth-child(4)  {
+    background-color: rgb(89, 113, 250);
+}
+.Rojito td:nth-child(6) {
+background-color: red;
+}
+.ingles tr:nth-child(2) {
+background-color: darkblue;
+color: aliceblue;
+}
