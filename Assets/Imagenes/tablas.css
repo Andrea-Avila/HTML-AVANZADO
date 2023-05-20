@@ -1,12 +1,18 @@
-table,
+table, /*Esta etiqueta les dice a todas las tablas cual va a ser su borde y color*/
 td{
-    border: 2px solid #333;
+    border: 1px solid black;
 }
-thead,
+/* thead,
     tfoot{
-        background-color: #333;
-        color: aqua;
+        background-color: rgb(6, 5, 83);
+        color: rgb(255, 255, 255);
     }
+*/
+#fonso{
+    background-color: rgb(6, 5, 83);
+    color: rgb(255, 255, 255);
+
+}
 .azulito tr :nth-child(4)  {
     background-color: rgb(89, 113, 250);
 }
@@ -16,4 +22,7 @@ background-color: red;
 .ingles tr:nth-child(2) {
 background-color: darkblue;
 color: aliceblue;
+}
+.simple {
+    align-content: center;
 }

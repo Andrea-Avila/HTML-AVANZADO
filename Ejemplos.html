@@ -12,27 +12,51 @@
     <table>
       <caption> Subtítulo de una tabla en la parte superior, de una celda</caption>
       <tr>
-        <td>Dato  de la tabla en cuestion</td>
+        <td>Dato  de la tabla ejemplo</td> <!--Ejemplo de el contenido de la tabla-->
       </tr>
     </table>
+
+
+
     <br />
     <br />
+
     <h1>Tablas</h1> <!--Las tablas son un conjunto estructurado de datos compuesto por filas y columnas.-->
-    <caption>Tabla de nombres</caption><!--representa un título descriptivo en una tabla.-->
+    <caption>Tabla de nombres</caption><!--representa un título en una tabla.-->
     <table><!--crea el elemento de tabla.-->
-      <tr><!--representa una fila.-->
-        <th>Nombre</th><!--representa las celdas de encabezado.-->
+      <tr><!--representa una fila en una tabla -->
+        <th>Nombre</th><!--La etiqueta th representa las celdas de encabezado en la tabla, osea la primer fila con los titulos de la tabla-->
         <th>Apellido</th>
       </tr>
       <tr>
-        <td>Mariana</td><!--representa las celdas de datos.-->
-        <td>Valladolid</td>
+        <td>Andrea</td><!--representa las celdas de datos, se escriben en forma de fila por la etiqueta tr que representa la primer fila, -->
+        <td>Avila</td>
       </tr>
       <tr>
-        <td>Jose</td>
+        <td>Jose</td> <!--Segundo dato e la fila de la tabla-->
+        <td>Lopez</td>
+      </tr>
+      <tr>
+        <td>Mauricio</td>
+        <td>Mendez</td>
+      </tr>
+      <tr>
+        <td>Luisa</td>
         <td>Garcia</td>
       </tr>
     </table>
+
+<!--
+Para hacer una tabla simple con varios datos se requiere de varias etiquetas en las que
+<table></table> es el comando de abrir un nueva tabla
+<tr></tr> es un comando en donde indicamos que empezaremos a escribir el fila
+<th></th> representa los encabezados de la tabla
+<td></td> representa los datos que queremos que lleve la tabla
+
+
+-->
+
+
     <p>Ejemplo de tabla por columnas en grupo </p>
     <table>
       <colgroup span="4"></colgroup> <!--Para aplicar una propiedad a más de una columna no es necesario repetir la propiedad en cada elemento <col>. Lo más sencillo es aplicarle el atributo span al primer elemento <col>. Este atributo funciona igual que rowspan y colspan, es decir, nos permite expandir la influencia de <col> al número de columnas que queramos.-->
@@ -80,6 +104,9 @@
       </tr>
     </table>
 
+
+
+
     <p>Ejemplo de Tabla con color en una Fila en especifico (rosa)</p>
 <table>
     <colgroup>
@@ -105,6 +132,10 @@
     </tr>
   </table>
 
+
+
+
+
   <div class="desdecss">
   <p>Ejemplo de Tabla con color en una columna en especifico Llamado desde css</p>
   <table class="azulito">
@@ -126,6 +157,9 @@
       </tr>
     </table>
 </div>
+
+
+
   <p>Ejemplo de Tabla, con color en una celda en especifico llamado desde css</p>
   <table class="Rojito">
       <tr>
@@ -145,6 +179,11 @@
         <td>Red</td>
       </tr>
     </table>
+
+
+
+
+
     <p>Ejemplo de Tabla, con color en una Fila en especifico llamado desde css</p>
     <table class="ingles">
         <tr>
@@ -164,13 +203,18 @@
           <td>Red</td>
         </tr>
       </table> 
+
+
+
+
+
+      <p>Encabezado en dos columnas con fondo</p>
     <table>
-      <p>encabezado simple</p>
-      <thead><!--esta etiqueta agrupa los elementos de la cabecera en la tabla.-->
-        <tr>
-          <th colspan="2">Encabezado de tablas</th><!--permite expandir las celdas de datos o de encabezados al número de columnas que deseemos que ocupe-->
-        </tr>
-      </thead>
+        <thead><!--esta etiqueta agrupa los elementos de la cabecera en la tabla.-->
+          <tr>
+            <th colspan="2" id="fonso">Encabezado de tablas</th><!--Se agrega id para que el color solo sea a esta tabla en especifico-->
+          </tr>
+        </thead>
       <tbody><!--esta etiqueta agrupa los elementos de contenido en la tabla.-->
         <tr>
           <td>El cuerpo de la tabla</td>
@@ -180,33 +224,87 @@
     </table>
     <br/>
     <br/>
-    <caption>Tabla de nombres </caption><!--representa un título descriptivo en una tabla.-->
+
+<!--colspan permite expandir las celdas de datos o de encabezados al número de columnas que deseemos que ocupe-->
+
+
+   <p>Ejemplo de una tabla con thead</p>
+   <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>País</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>25</td>
+        <td>Estados Unidos</td>
+      </tr>
+      <tr>
+        <td>Lisa</td>
+        <td>30</td>
+        <td>Canadá</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+   
     <p>Tabla con thead, tfoot, y tbody</p>
     <table>
-      <thead>
-        <tr>
-          <th>Header content 1</th>
-          <th>Header content 2</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Body content 1</td>
-          <td>Body content 2</td>
-        </tr>
-      </tbody>
+      <caption>Tabla de nombres </caption> <!--representa un título en una tabla.-->
+        <thead>
+         <tr>
+           <th>Primer encabezado de la tabla</th>
+            <th>Segundo encabezado de la tabla</th>
+            <th>Tercer encabezado de la tabla</th>
+            <th>Cuarto encabezado de la tabla</th>
+            <th>Quinto encabezado de la tabla</th>
+
+         </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Primer dato de la tabla</td>
+            <td>Segundo dato de la tabla</td>
+            <td>Tercer dato de la tabla</td>
+            <td>Cuarto dato de la tabla</td>
+            <td>Quinto dato de la tabla</td>
+          </tr>
+        </tbody>
       <tfoot> <!--esta etiqueta agrupa los elementos de pie en la tabla.-->
         <tr>
-          <td>Footer content 1</td>
-          <td>Footer content 2</td>
+          <td>Primer final de la tabla</td>
+          <td>Segundo final de la tabla</td>
+          <td>Tercer final de la tabla</td>
+          <td>Cuarto final de la tabla</td>
+          <td>Quinto final de la tabla</td>
         </tr>
       </table>
-      <p>Table with colgroup</p>
-      <p>Table with colgroup and col</p>
+
+<!--
+
+        Las etiquetas thead, tfoot, y tbody se ocupan para una buena estructura en una tabla, ademas de que aportan una mejor organizacion e inclusion a personas con dsicpacidad
+
+<thead></thead> se utiliza principalmente para mejorar la accesibilidad y la semántica de la tabla.
+
+<tbody></tbody>  se recomienda su uso para mejorar la legibilidad del código y la accesibilidad.
+
+<tfoot> <esta etiqueta agrupa los elementos de pie en la tabla.
+
+-->
+
     <br />
+
+
+
+
     <hr />
-    <div align="center" style="border: 03px ridge rgb(8, 8, 8)">
-      <!--Agregar una identificación con un nombre de anclaje-->
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8)"> <!--Agregar una identificación con un nombre de anclaje-->
       <a id="nombre-anclaje">
         Aquí el nombre de la sección a la que quieres brincar
       </a>
@@ -228,7 +326,7 @@
         height="300"
       />
     </div>
-    <div align="center" style="border: 03px ridge rgb(8, 8, 8)">
+    <div align="center" style="border: 03px ridge rgb(114, 13, 13)">
       <!--anclaje en un párrafo-->
       <p id="nombre-anclaje">Nombre del párrafo</p>
     </div>
@@ -262,5 +360,17 @@ _top- Abre el documento en el cuerpo completo de la ventana.
       Para conocer la receta del pastel de chocolate da clik
       <a href="tablados.html">aquiii</a>.
     </p>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h2>Agua de Horchata</h2>
+    <p>
+      Para conocer la receta del agua de horchata da clik
+      <a href="aguadehorchata.html">aquiii</a>.
+    </p>
+
+
+
   </body>
 </html>
